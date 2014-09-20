@@ -122,6 +122,7 @@ class ShipStationApp < EndpointBase::Sinatra::Base
           id: shipment_number,
           tracking: resource.TrackingNumber,
           shipstation_id: resource.ShipmentID.to_s,
+          shipping_service_id: resource.ShippingServiceID,
           status: "shipped",
           shipping_address: {
             firstname: firstname,
